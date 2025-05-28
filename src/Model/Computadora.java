@@ -1,7 +1,7 @@
 package Model;
 
 public class Computadora {
-    private String marca;
+    private String marca = "Lenovo";
     private String modelo;
     private boolean encedido;
 
