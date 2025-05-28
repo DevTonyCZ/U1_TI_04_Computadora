@@ -6,11 +6,21 @@ public class Computadora {
     private boolean encedido;
 
     public void enceder() {
-        this.encedido = true;
+        if (!encedido) {
+            System.out.println("Encendiendo...");
+            this.encedido = true;
+        } else {
+            System.out.println("La computadora ya está encendida.");
+        }
     }
 
     public void apagar() {
-        this.encedido = false;
+        if (encedido) {
+            System.out.println("Apagando...");
+            this.encedido = false;
+        } else {
+            System.out.println("La computadora ya está apagada.");
+        }
     }
 
     public String getMarca() {
@@ -20,7 +30,7 @@ public class Computadora {
     public String getModelo() {
         return modelo;
     }
-    public boolean estado() {
+    public boolean encendido() {
         return encedido;
     }
 
